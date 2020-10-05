@@ -1,0 +1,25 @@
+GET my_index/_search
+{
+  "query": {
+    "constant_score": {
+      "filter": {
+        "bool": {
+           "must":[
+                {"range" : {"column_name":{"gte" : "2020-08-10","lte": "2020-08-13"} }}, #hangi aralıklarda olacak.
+                {"match" : {"column_name":"aranacak_kelime"} },
+                {"match" : {"column_name":"aranacak_kelime"} }
+             ]
+         }
+        
+      },
+      "boost": 1.2
+    }
+  },
+  "sort": [ #sıralama
+    {
+      "@timestamp": {
+        "order": "desc"
+      }
+    }
+  ],"size": 50  #kaç sonuç listelenecek.
+}
