@@ -1,0 +1,11 @@
+#alias verme işlemi bir datanın günceli geldiğinde diğer datanın bağlantı işlemi değiştirmeden sürecin devam etmesi için kullanılır.
+#yani yeni veri gelsede veriye eski verinin adını alias olarak verirsek bağlantıyı değiştmemiz gerekmez.
+#eski veriyi silmeliyiz ki takma ad olarak eski verinin adını yeni veriye verebilelim.
+#mevcut bir indexin adı takma ad olarak başka indexe verilemez.
+ 
+POST /_aliases
+{
+         "actions":[
+                 {"add":{"index":"yeni_index_adı","alias":"alias_adı"}}
+         ]
+}
