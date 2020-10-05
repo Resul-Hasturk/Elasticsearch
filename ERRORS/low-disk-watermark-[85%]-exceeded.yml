@@ -1,0 +1,33 @@
+master node'unun /var/log/elasticsearch dizininde log dosyalarında 
+
+[2020-10-04T23:59:43,874][INFO ][o.e.c.r.a.DiskThresholdMonitor] [master-2] low disk watermark [85%] exceeded on [NVXXnkg9RcS1LJHbxE4JWw][data-4][/var/lib/elasticsearch/nodes/0] free: 646.7gb[13.9%], replicas will not be assigned to this node
+[2020-10-04T23:59:43,874][INFO ][o.e.c.r.a.DiskThresholdMonitor] [master-2] low disk watermark [85%] exceeded on [U8_onApfRnG7fpToARusIw][data-7][/var/lib/elasticsearch/nodes/0] free: 606.3gb[13.5%], replicas will not be assigned to this node
+[2020-10-04T23:59:43,874][INFO ][o.e.c.r.a.DiskThresholdMonitor] [master-2] low disk watermark [85%] exceeded on [vKA6qG2WRr2VJnK4wNVYOA][data-2][/var/lib/elasticsearch/nodes/0] free: 555.4gb[12.4%], replicas will not be assigned to this node
+[2020-10-04T23:59:43,874][INFO ][o.e.c.r.a.DiskThresholdMonitor] [master-2] low disk watermark [85%] exceeded on [jFQih3_gQ8-MdAzbTwlHFg][data-5][/var/lib/elasticsearch/nodes/0] free: 638.4gb[13.7%], replicas will not be assigned to this node
+[2020-10-04T23:59:43,874][INFO ][o.e.c.r.a.DiskThresholdMonitor] [master-2] low disk watermark [85%] exceeded on [_BUmAFaYTGi-6aaYnPlqvw][data-1][/var/lib/elasticsearch/nodes/0] free: 644.8gb[14.4%], replicas will not be assigned to this node
+
+mesajlarına rastlanırsa disk fligran yapılandırmalarının değiştirilmesi gerekiyor.
+Zaten böyle bir log mesajı alıyorsanız mesajda belirtilen node/nodelarınıza veri akışı durmuş ve shard sayısı olarak veri akışı devam eden nodelara göre geride kaldığını göreceksiniz.
+
+Bu durumu düzeltmek için Kibana'da Console'de aşağıdaki kodu çalıştırabiliriz.
+
+40TB lik cluster için benim yaptığım ayarlar.
+
+PUT _cluster/settings
+{
+  "transient": {
+    "cluster.routing.allocation.disk.watermark.low": "240",
+    "cluster.routing.allocation.disk.watermark.high": "160gb",
+    "cluster.routing.allocation.disk.watermark.flood_stage": "40gb"
+  }
+}
+
+Aşağıdaki kodu da çalıştırmamız gerektiği söylenmiş fakat ben bu kodu çalıştırmaya gerek duymadım direk olarak shard dağıtımı başladı.Bu konu hakkında pek bilgim yok.
+#PUT your_index_name/_settings
+#{
+# "index": {
+#   "blocks": {
+#     "read_only_allow_delete": "false"
+#    }
+#  }
+#}
