@@ -1,0 +1,11 @@
+Elasticsearch Like kullanımı:
+
+GET index_name/_search
+{
+"query":{
+"match_phrase":{
+  "field_name":"value"
+      }
+    }
+  }
+}
