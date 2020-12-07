@@ -1,0 +1,168 @@
+{
+  "_nodes" : {
+    "total" : 14,
+    "successful" : 14,
+    "failed" : 0
+  },
+  "cluster_name" : "escls01",
+  "cluster_uuid" : "a14P_D4BQmaCeJalR-zU6w",
+  "timestamp" : 1607326429417,
+  "status" : "yellow",
+  "indices" : {
+    "count" : 102,
+    "shards" : {
+      "total" : 942,
+      "primaries" : 472,
+      "replication" : 0.9957627118644068,
+      "index" : {
+        "shards" : {
+          "min" : 2,
+          "max" : 78,
+          "avg" : 9.235294117647058
+        },
+        "primaries" : {
+          "min" : 1,
+          "max" : 40,
+          "avg" : 4.627450980392157
+        },
+        "replication" : {
+          "min" : 0.95,
+          "max" : 1.0,
+          "avg" : 0.9995098039215686
+        }
+      }
+    },
+    "docs" : {
+      "count" : 35596607629,
+      "deleted" : 4547948240
+    },
+    "store" : {
+      "size_in_bytes" : 34931600731915
+    },
+    "fielddata" : {
+      "memory_size_in_bytes" : 2635087640,
+      "evictions" : 0
+    },
+    "query_cache" : {
+      "memory_size_in_bytes" : 16339450690,
+      "total_count" : 388756567,
+      "hit_count" : 11429676,
+      "miss_count" : 377326891,
+      "cache_size" : 76280,
+      "cache_count" : 1189294,
+      "evictions" : 1113014
+    },
+    "completion" : {
+      "size_in_bytes" : 0
+    },
+    "segments" : {
+      "count" : 26196,
+      "memory_in_bytes" : 26413195243,
+      "terms_memory_in_bytes" : 16180375897,
+      "stored_fields_memory_in_bytes" : 8234229896,
+      "term_vectors_memory_in_bytes" : 0,
+      "norms_memory_in_bytes" : 50052160,
+      "points_memory_in_bytes" : 1896777112,
+      "doc_values_memory_in_bytes" : 51760178,
+      "index_writer_memory_in_bytes" : 5342934630,
+      "version_map_memory_in_bytes" : 351394411,
+      "fixed_bit_set_memory_in_bytes" : 4194072,
+      "max_unsafe_auto_id_timestamp" : 1607312124042,
+      "file_sizes" : { }
+    }
+  },
+  "nodes" : {
+    "count" : {
+      "total" : 14,
+      "coordinating_only" : 0,
+      "data" : 11,
+      "ingest" : 11,
+      "master" : 3,
+      "ml" : 11,
+      "voting_only" : 0
+    },
+    "versions" : [
+      "7.4.2"
+    ],
+    "os" : {
+      "available_processors" : 752,
+      "allocated_processors" : 752,
+      "names" : [
+        {
+          "name" : "Linux",
+          "count" : 14
+        }
+      ],
+      "pretty_names" : [
+        {
+          "pretty_name" : "Ubuntu 18.04.3 LTS",
+          "count" : 11
+        },
+        {
+          "pretty_name" : "Ubuntu 18.04.4 LTS",
+          "count" : 3
+        }
+      ],
+      "mem" : {
+        "total_in_bytes" : 3040221990912,
+        "free_in_bytes" : 207888269312,
+        "used_in_bytes" : 2832333721600,
+        "free_percent" : 7,
+        "used_percent" : 93
+      }
+    },
+    "process" : {
+      "cpu" : {
+        "percent" : 105
+      },
+      "open_file_descriptors" : {
+        "min" : 1266,
+        "max" : 4157,
+        "avg" : 2955
+      }
+    },
+    "jvm" : {
+      "max_uptime_in_millis" : 28995607452,
+      "versions" : [
+        {
+          "version" : "13.0.1",
+          "vm_name" : "OpenJDK 64-Bit Server VM",
+          "vm_version" : "13.0.1+9",
+          "vm_vendor" : "AdoptOpenJDK",
+          "bundled_jdk" : true,
+          "using_bundled_jdk" : true,
+          "count" : 14
+        }
+      ],
+      "mem" : {
+        "heap_used_in_bytes" : 212555777984,
+        "heap_max_in_bytes" : 405874409472
+      },
+      "threads" : 5465
+    },
+    "fs" : {
+      "total_in_bytes" : 51522449473536,
+      "free_in_bytes" : 15893860286464,
+      "available_in_bytes" : 15643698786304
+    },
+    "plugins" : [ ],
+    "network_types" : {
+      "transport_types" : {
+        "security4" : 14
+      },
+      "http_types" : {
+        "security4" : 14
+      }
+    },
+    "discovery_types" : {
+      "zen" : 14
+    },
+    "packaging_types" : [
+      {
+        "flavor" : "default",
+        "type" : "deb",
+        "count" : 14
+      }
+    ]
+  }
+}
