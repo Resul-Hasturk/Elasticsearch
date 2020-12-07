@@ -1,0 +1,43 @@
+[2020-12-06T21:30:31,700][WARN ][o.e.c.s.ClusterApplierService] [data-1] cluster state applier task [ApplyCommitRequest{term=13, version=721312, sourceNode={master-3}{wHJJAON-TS-9uMYtbisMig}{WYIoYMs3QhS3sVGCi0_Ukw}
+{192.168.3.59}{192.168.3.59:9300}{m}{xpack.installed=true, disk_type=ssd}}] took [59s] which is above the warn threshold of [30s]: [running task [ApplyCommitRequest{term=13, version=721312,
+ sourceNode={master-3}{wHJJAON-TS-9uMYtbisMig}{WYIoYMs3QhS3sVGCi0_Ukw}{192.168.3.59}{192.168.3.59:9300}{m}{xpack.installed=true, disk_type=ssd}}]] took [0ms], [connecting to new nodes] took [0ms], [applying settings] took [0ms],
+ [running applier [org.elasticsearch.indices.cluster.IndicesClusterStateService@3ae7fb08]] took [59119ms], [running applier [org.elasticsearch.script.ScriptService@6d46732f]] took [0ms],
+ [running applier [org.elasticsearch.xpack.ilm.IndexLifecycleService@69db2d8d]] took [0ms], [running applier [org.elasticsearch.repositories.RepositoriesService@21617839]] took [0ms],
+ [running applier [org.elasticsearch.snapshots.RestoreService@68bd683]] took [0ms], [running applier [org.elasticsearch.ingest.IngestService@588a0276]] took [0ms],
+ [running applier [org.elasticsearch.action.ingest.IngestActionForwarder@2c988be8]] took [0ms], [running applier [org.elasticsearch.action.admin.cluster.repositories.cleanup.TransportCleanupRepositoryAction$$Lambda$3560/0x00000008015bf840@1498e774]] took [0ms],
+ [running applier [org.elasticsearch.tasks.TaskManager@6f28cc35]] took [0ms], [running applier [org.elasticsearch.gateway.GatewayMetaState@5fefa68d]] took [6ms], [notifying listener [org.elasticsearch.cluster.InternalClusterInfoService@45f02322]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.security.support.SecurityIndexManager@fe24583]] took [0ms], [notifying listener [org.elasticsearch.xpack.security.support.SecurityIndexManager@67bb5a6f]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.security.authc.TokenService$$Lambda$1978/0x000000080120cc40@75eb3f3d]] took [0ms], [notifying listener [org.elasticsearch.xpack.security.transport.SecurityServerTransportInterceptor$$Lambda$2066/0x000000080124b440@3cd55de6]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.watcher.support.WatcherIndexTemplateRegistry@1001031]] took [0ms], [notifying listener [org.elasticsearch.xpack.watcher.WatcherLifeCycleService@2dbec5fb]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.watcher.WatcherIndexingListener@6de524]] took [0ms], [notifying listener [org.elasticsearch.xpack.ml.job.process.autodetect.AutodetectProcessManager@1501bade]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.ml.datafeed.DatafeedManager$TaskRunner@1b3b7b6b]] took [0ms], [notifying listener [org.elasticsearch.xpack.ml.MlInitializationService@2c64f03b]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.ml.MlAssignmentNotifier@7c08a8fb]] took [0ms], [notifying listener [org.elasticsearch.xpack.ilm.IndexLifecycleService@69db2d8d]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.core.slm.history.SnapshotLifecycleTemplateRegistry@c08eb1d]] took [0ms], [notifying listener [org.elasticsearch.xpack.slm.SnapshotLifecycleService@4ca829d4]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.ccr.action.ShardFollowTaskCleaner@4746ed52]] took [0ms], [notifying listener [org.elasticsearch.cluster.metadata.TemplateUpgradeService@7eb0da31]] took [0ms],
+ [notifying listener [org.elasticsearch.node.ResponseCollectorService@35ab96f9]] took [0ms], [notifying listener [org.elasticsearch.snapshots.SnapshotShardsService@3840ef11]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.ml.action.TransportOpenJobAction$OpenJobPersistentTasksExecutor$$Lambda$3113/0x00000008014c4840@481ca936]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.ml.action.TransportStartDataFrameAnalyticsAction$TaskExecutor$$Lambda$3117/0x00000008014c5840@30058356]] took [0ms], 
+[notifying listener [org.elasticsearch.persistent.PersistentTasksClusterService@59f0d7f1]] took [0ms], [notifying listener [org.elasticsearch.cluster.routing.DelayedAllocationService@667783b9]] took [0ms],
+ [notifying listener [org.elasticsearch.indices.store.IndicesStore@4b0fd358]] took [0ms], [notifying listener [org.elasticsearch.gateway.DanglingIndicesState@3811f650]] took [0ms],
+ [notifying listener [org.elasticsearch.persistent.PersistentTasksNodeService@4980a19a]] took [0ms], [notifying listener [org.elasticsearch.license.LicenseService@7e946d8c]] took [0ms],
+ [notifying listener [org.elasticsearch.xpack.ccr.action.AutoFollowCoordinator@7cfe8c9c]] took [0ms], [notifying listener [org.elasticsearch.gateway.GatewayService@20784298]] took [0ms], 
+[notifying listener [org.elasticsearch.cluster.service.ClusterApplierService$LocalNodeMasterListeners@521305bc]] took [0ms]
+[2020-12-06T21:47:46,929][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1136964] overhead, spent [254ms] collecting in the last [1s]
+[2020-12-06T21:56:22,109][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1137478] overhead, spent [370ms] collecting in the last [1s]
+[2020-12-06T22:06:59,019][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1138113] overhead, spent [306ms] collecting in the last [1s]
+[2020-12-06T22:18:04,781][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1138773] overhead, spent [290ms] collecting in the last [1s]
+[2020-12-06T22:19:36,545][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1138864] overhead, spent [387ms] collecting in the last [1s]
+[2020-12-06T22:23:58,224][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1139125] overhead, spent [316ms] collecting in the last [1s]
+[2020-12-06T22:29:18,721][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1139442] overhead, spent [253ms] collecting in the last [1s]
+[2020-12-06T22:32:37,610][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1139640] overhead, spent [300ms] collecting in the last [1s]
+[2020-12-06T23:10:56,381][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1141905] overhead, spent [266ms] collecting in the last [1s]
+[2020-12-06T23:13:02,062][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1142020] overhead, spent [271ms] collecting in the last [1s]
+[2020-12-06T23:22:54,937][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1142608] overhead, spent [296ms] collecting in the last [1.1s]
+[2020-12-06T23:40:43,638][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1143672] overhead, spent [253ms] collecting in the last [1s]
+[2020-12-06T23:43:14,022][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1143821] overhead, spent [253ms] collecting in the last [1s]
+[2020-12-06T23:43:23,875][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1143830] overhead, spent [253ms] collecting in the last [1s]
+[2020-12-06T23:43:32,384][ERROR][o.e.x.m.c.n.NodeStatsCollector] [data-1] collector [node_stats] timed out when collecting data
+[2020-12-06T23:45:32,469][ERROR][o.e.x.m.c.n.NodeStatsCollector] [data-1] collector [node_stats] timed out when collecting data
+[2020-12-06T23:55:44,423][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1144541] overhead, spent [290ms] collecting in the last [1s]
+[2020-12-06T23:56:14,627][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1144571] overhead, spent [252ms] collecting in the last [1s]
+[2020-12-06T23:57:07,795][INFO ][o.e.m.j.JvmGcMonitorService] [data-1] [gc][1144624] overhead, spent [257ms] collecting in the last [1s]
